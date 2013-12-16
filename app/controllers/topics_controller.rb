@@ -10,7 +10,7 @@ class TopicsController < ApplicationController
 
   def show
     @topic = Topic.find(params[:id])
-    @posts = @topics.posts
+    @posts = @topic.posts
   end
 
   def edit
